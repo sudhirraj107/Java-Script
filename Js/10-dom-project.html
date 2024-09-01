@@ -1,0 +1,119 @@
+<!-- <html>
+    <head>
+        <title>Dom Project</title>
+    </head>
+    <body>
+        <p>You tube subscribe button</p>
+        <button onclick="
+        if(document.querySelector('.subscribe-button').innerHTML==='Subscribe')
+        {
+            subscribe-button.innerHTML='Subscribed';
+        }
+        else if(document.querySelector('.subscribe-button').innerHTML==='Subscribed')
+        {
+            subscribe-button.innerHTML='Subscribe';
+        }
+        "class="subscribe-button"
+        >Subscribe</button>
+        
+
+    </body>
+    <script>
+    const a=document.querySelector('button').innerHTML;
+    console.log(a);
+    
+    </script>
+</html> -->
+<html>
+    <head>
+        <title>DOM project</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                
+            }
+            .js-button{
+                color:white;
+                background-color: black;
+                border-radius: 50px;
+                padding: 10px;
+                padding-left: 15px;
+                padding-right: 15px;
+                border: none;
+                font-weight:bold; 
+                cursor:pointer;
+                margin-bottom: 30px;
+            }
+            .is-subscribed{
+                background-color: rgb(241, 241, 241);
+                color:black;
+            }
+            .js-total-cost{
+                padding:10px;
+            }
+            .calculateButton{
+                background-color: green;
+                padding: 11px 20px; /*where the 10 px denote the pixels of top and bottom and 20 px denote padding the left and right*/
+                color:white;
+                font-size: 15px;
+                border: none;
+            }
+            
+        </style>
+    </head>
+    
+    <body>
+        <p>Youtube subscribe button</p>
+        <button onclick="changeButton();"
+        class="js-button"
+        >Subscribe</button>  
+        
+        <p>Rock Paper Scissor</p>
+        <a href="9 stone paper scissor.html">Click Here</a>
+
+        <p>Amazon Shipping Calculator</p>
+        <p>Order Under Rs 500 = +50 shipping.</p>
+        <p>Order above rs 500 = FREE shipping.</p>
+        <input  class="js-total-cost" placeholder="Cash of Order" onkeydown="clickfunction(event);">
+        <button onclick="calculateshipping();" class="calculateButton">Calculate</button>
+        <p class="js-total-fee"></p>
+    </body>
+    <script>
+        console.log(window);
+        window.console.log('35'+5);
+        console.log('35'+5);
+        console.log('35'-5);  //Numbers which are in string cant perform addition operation , it do concatenation we can be able to perform other mathematical op like sub, mul, div..
+        console.log('45'* 5);
+        function clickfunction(event){                      //to use the number in string convert them into numbers using built in fun NUMBER()
+            if(event.key ==='Enter')
+            calculateshipping();
+        }
+        function changeButton(){
+            const buttonElement=document.querySelector('.js-button');
+                if(buttonElement.innerHTML==='Subscribe')
+                {
+                    buttonElement.innerHTML='Subscribed';
+                    buttonElement.classList.add('is-subscribed');
+                }
+                else if(buttonElement.innerHTML==='Subscribed'){
+                    buttonElement.innerHTML='Subscribe';
+                    buttonElement.classList.remove('is-subscribed');
+                }
+
+        }
+        
+        function calculateshipping(){
+            const price=document.querySelector('.js-total-cost');
+            let cost=Number(price.value);
+
+            if(cost<500){
+                cost=cost+50;
+            }
+            else(cost<500);
+            {
+                console.log(cost);
+            }
+            document.querySelector('.js-total-fee').innerHTML= `${cost}`;
+        }
+    </script>
+</html>

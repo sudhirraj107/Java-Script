@@ -1,0 +1,102 @@
+<!-- <html>
+    <head>
+        <title>Head-Tail</title>
+    </head>
+    <body>
+        <h1>Choose one</h1>
+        <button onclick="guess('head');">Heads</button>
+        <button onclick="guess('tail');">Tails</button>
+    </body>
+    
+       <script>
+        let result='';
+        let comMove='';
+        function guess(){
+            compMove();
+            alert(`${result}`)
+
+        }
+        function compMove()
+        {
+            const a=Math.random();
+            if(a<1/2)
+            {
+                comMove='head';
+            }else{
+                comMove='tail';
+            }
+            final();
+        }
+        function final(){
+            if(comMove===guess)
+            {
+                result='Tie'
+            }
+            else{
+                result='Won'
+            }
+        }
+
+    </script> 
+    <script>
+        let result = '';
+        let comMove = '';
+
+        function guess(userGuess) {
+            compMove();
+            final(userGuess);
+            alert(result);
+        }
+
+        function compMove() {
+            const a = Math.random();
+            comMove = (a < 0.5) ? 'head' : 'tail';  //if else statements can also be written in this way
+            comMoves = (a<0.5) ? 'You are brave ' : 'You are sweet';
+            console.log(comMoves);
+        }
+
+        function final(userGuess) {
+            if (comMove === userGuess) {
+                result = 'Tie';
+            } else {
+                result = 'Won';
+            }
+        }
+    </script>
+</html> -->
+
+<html>
+    <head>
+        <title>Head-Tail</title>
+    </head>
+    <body>
+        <h1>Choose one</h1>
+        <button onclick="guess='head';">Heads</button>
+        <button onclick="guess='tail';">Tails</button>
+    </body>
+    <script>
+        let result = '';
+        let comMove = '';
+
+        
+        function guess(userGuess) {
+            compMove();
+            final(userGuess);
+            alert(result);
+        }
+
+        function compMove() {
+            const a = Math.random();
+            comMove = (a < 0.5) ? 'head' : 'tail';  //if else statements can also be written in this way
+            comMoves = (a<0.5) ? 'You are brave ' : 'You are sweet';
+            console.log(comMoves);
+        }
+
+        function final(userGuess) {
+            if (comMove === userGuess) {
+                result = 'Tie';
+            } else {
+                result = 'Won';
+            }
+        }
+    </script>

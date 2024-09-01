@@ -1,0 +1,98 @@
+<!-- <   button>Click</button>
+<button>Sudhir</button>
+<button>Burger</button>
+<p>Hello world!</p>
+<p>I went to college and nothing much happened there </p> 
+<body>
+    <p>Adults Plain Cotton T-Shirt</p>
+    <p>Price: Rs 799</p>
+    <button onclick="alert('Added');">Add to cart</button>
+    <button onclick="console.log('Loading');  //Two or more funtions can be applied to the onclick 
+    alert('Purchased!');">Buy Now</button>
+</body> -->
+ <!-- <p>Cart Quantity</p>
+ <button onclick="let var1=0;
+ console.log('Cart quantity :0')">Show Quantity</button>
+ <button onclick="console.log('Cart quantity :1')">Add to Cart</button>
+ <button onclick="console.log('Cart quantity :2')">+2</button>
+ <button onclick="console.log('Cart quantity :3')">+3</button>
+ <button onclick="console.log('')">Reset Cart</button> 
+-->
+
+ <body>
+    <h1>Cart</h1>
+    <button onclick="console.log(`Cart Quantity : ${cartquantity}`)">show Quantity</button>
+
+    <button onclick=" cartquantity=cartquantity+1; /*This line can also be written as cartquantity +=1;  and cartquantity++; */ 
+
+    console.log(`Cart Quantity : ${cartquantity }`)">Add to Cart</button>
+
+    <button onclick="cartquantity=cartquantity+2
+   if(cartquantity+2>10)
+    {
+      alert(`Cart Full`);
+    }
+    else console.log(`Cart Quantity : ${cartquantity }`)">+2</button>
+   
+    <button onclick="cartquantity=cartquantity+3;
+
+    console.log(`Cart Quantity : ${cartquantity}`)">+3</button>
+
+    <button onclick="cartquantity+=4;
+    
+    console.log(`Cart Quantity: ${cartquantity}`)">+4</button>
+
+    <button onclick="cartquantity+=5;
+    
+    console.log(`Cart Quantity: ${cartquantity}`)">+5</button>
+
+    <button onclick="cartquantity-=1;
+    
+    console.log(`Cart Quantity :${cartquantity}`)">Remove From Cart</button>
+
+    <button onclick="cartquantity-=2;
+
+    console.log(`Cart Quantity: ${cartquantity}`)">-2</button>
+
+    <button onclick="cartquantity-=3;
+
+    console.log(`Cart Quantity: ${cartquantity}`)">-3</button>
+
+    <button onclick="cartquantity=0;
+
+    console.log('Cart Quantity : 0')
+
+    console.log('Cart was reset.')">Reset Cart</button>
+
+ </body>
+ <script>
+
+    let cartquantity=0;
+
+ </script>
+  
+ <!-- <h1>Restaurant </h1>
+ <button onclick="
+    
+    console.log(`Burger : ${burger}`)">Burger
+</button>
+ <button onclick="  
+    
+    console.log(`Coca-Cola :${cola}`)
+ ">Coca-Cola
+ </button>
+ <button onclick="
+    console.log(`Chicken Nuggets :${nuggets}`)
+    alert(`Cost of food : Rs ${total}`);
+    ">Chicken Nuggets
+</button>
+ <script>
+    let cost=0;
+    let burger=80;
+    let cola=50;
+    let nuggets=90;
+    let total= burger + cola + nuggets;
+    tax=total *.1;
+    console.log(`Tax :${tax}`);
+    
+ </script>  -->

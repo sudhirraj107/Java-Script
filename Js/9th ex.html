@@ -1,0 +1,51 @@
+<!-- 9a  9b-->
+ <button>9a</button>
+ <button  class="b">9b</button>
+ <script>
+    console.log(document.querySelector('button'));
+    document.querySelector('.b').innerHTML='9b done';
+ </script>
+
+ <button onclick="onclickhead();">Heads</button>
+ <button onclick="onclicktail();">Tails</button>
+ <p class="js-para"></p>
+ <script>
+    function onclickhead(){
+        document.querySelector('.js-para').innerHTML=`You choose :Heads`;
+    }
+    function onclicktail()
+    {
+        document.querySelector('.js-para').innerHTML='You choose :Tails';
+    }
+ </script> <!--This can be also written in button-->
+ <button onclick="document.querySelector('.js-paraa').innerHTML='You choose: Heads'">Heads</button>
+ <button onclick="document.querySelector('.js-paraa').innerHTML='You choose: Tails'">Tails</button>
+ <p class="js-paraa"></p>
+ <script>
+ </script>
+
+ <input class="js-inp"  onkeydown="evefunction(event);">
+ <button onclick="newfunction();">Submit</button>
+ <p class="js-demo"></p>
+ <script>
+    function evefunction(event)
+    {
+        if(event.key==='Enter'){
+            newfunction();
+        }
+    }
+    function newfunction(){
+        const result=document.querySelector('.js-inp');
+        document.querySelector('.js-demo').innerHTML=`My name is ${result.value}`;
+    }
+    
+ </script>
+
+ <input  class="js-imp" onkeyup="const para=document.querySelector('.js-imp');
+ document.querySelector('.js-paara').innerHTML= para.value;
+ ">
+ <p class="js-paara"></p>
+ <script>
+    
+   
+ </script>

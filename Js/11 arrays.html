@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const myarray=[10,29,36,36,83,49,33,30,546,367,36];
+    console.log(myarray[4]);
+    let total=0;
+    for(let i=0;i<myarray.length;i++)
+    {
+       const num=myarray[i];
+       total+=num;
+
+    }
+    console.log(total);
+
+    const mynewarray=[];
+    for(i=0;i<myarray.length;i++){
+        const num=myarray[i];
+        mynewarray.push(num*3);
+    }
+    console.log(myarray);
+    console.log(mynewarray);
+
+</script>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list</title>
+</head>
+<body>
+    <h1>Todo list 1</h1>
+    <input type="text"  class="inputt">
+    <button onclick="addfun();">Add</button>
+
+    
+    <h1>Todo list 2</h1>
+    <input type="text"  class="input-text">
+    <button onclick="addfunc();">Add</button>
+    <p class="para"></p>
+    
+</body>
+<script>
+    const todoarray=[];
+    
+    function addfun()
+    {
+        const list=document.querySelector('.inputt');
+        const todolist=list.value;
+        todoarray.push(todolist);
+        console.log(todoarray);
+        list.value='';
+    }
+    
+    // const todoarray2 = [];
+    
+    // function addfunc() {
+    //     const list2 = document.querySelector('.input-text');
+    //     const todolist2 = list2.value;
+    //     todoarray2.push(todolist2);
+        
+    //     list2.value = '';
+
+    //     // Select the display element only once
+    //     let display = document.querySelector('.para');
+        
+    //     // Clear the existing content
+    //     display.innerHTML = '';
+
+    //     // Update the display with all items in the array
+    //     for (let i = 0; i < todoarray2.length; i++) {
+    //         // Create a new paragraph element for each item
+    //         const item = document.createElement('p');
+    //         item.textContent = todoarray2[i];
+    //         // Append the new paragraph to the display element
+    //         display.appendChild(item);
+    //     }
+    // }
+    
+
+    const todoarray2=[];
+    function addfunc(){
+        const list2=document.querySelector('.input-text');
+        const todolist2=list2.value;
+        todoarray2.push(todolist2);
+        
+        list2.value='';
+        let display=document.querySelector('.para');
+        display.innerHTML='';
+        for(i=0;i<todoarray2.length;i++){
+            const item = document.createElement('p');
+            item.textContent = todoarray2[i];
+        // Append the new paragraph to the display element
+            display.appendChild(item);
+        // display.innerHTML=(todoarray2[i]);
+        }       
+
+    }
+    
+</script>
+</html>

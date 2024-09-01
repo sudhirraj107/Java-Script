@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11 j</title>
+</head>
+<body>
+    
+</body>
+<script>
+    
+    function addArray(array1,array2){
+        const result=[];        //declaring the result outside the function causes to ush in the same array[result]
+        for(i=0;i<array1.length;i++){
+            result.push(array1[i]+array2[i]);
+        }
+        return result;
+    }
+    console.log(addArray([1,8,3],[1,2,3]));
+    console.log(addArray([12,84,35],[114,42,53]));
+    console.log(addArray([108,85,953],[17,24,32]));
+</script>
+</html>

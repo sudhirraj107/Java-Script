@@ -1,0 +1,50 @@
+<style>
+    .popup{
+        background-color:black;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        z-index: 1;
+        opacity: 0.8;
+        display: none;
+
+    }
+    .popdown{
+        background-color: white;
+        padding: 20px;
+        width: 40%;
+        z-index: 3;
+        position: absolute;
+        color: black;
+        left: 30%;
+        border-radius: 10px;
+        display: none;
+    }
+</style>
+
+<button onclick="popupfun()">
+    Show
+</button>
+<div class="popup"></div>
+<div class="popdown" >
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ab voluptatum commodi aspernatur, repellendus repudiandae facere eos amet dolor. Quod quae est exercitationem nihil eveniet eaque saepe minus porro cupiditate.</p>
+    <button onclick="closer()">Close</button>
+</div>
+
+<script>
+    
+    var popup=document.querySelector('.popup');
+        
+    var popdown=document.querySelector('.popdown');
+    function popupfun(){
+        popdown.style.display="block";
+        popup.style.display="block";
+    }
+    function closer(){
+        popdown.style.display="none";
+        popup.style.display="none";
+
+    }
+</script>
